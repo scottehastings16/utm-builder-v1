@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UTM Generator</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../public/stylesheets/style.css"> 
+  <head>
+    <script src="../public/javascripts/main.js" defer></script>
+  </head>
+</head>
+<body>
+  <section class="specs-header">
+    <h1>Coca-Cola Global UTM Builder</h1>
+  </section>
+  
+  <section class="specs-output">
+    <form id="utm-form" onsubmit="generateUTM(event)">
+      <div class="input-section" id="background-toggle-container">
+        <input type="checkbox" id="background-toggle" > <label for="background-toggle">Disable Animations</label>
+      </div>
+      <div class="input-section">
+        <label for="url-input">Enter URL:</label>
+        <input type="text" id="url-input" placeholder="https://www.coca-cola.com" required>
+      </div>
+    
+      <div class="input-section" id="platform-select-container">
+        <label for="platform-select">Select Platform:</label>
+        <select id="platform-select" required>
+          <option value="">-- Platform --</option>
+        </select>
+      </div>
+    
+      <div class="input-section">
+        <label for="use-case-select">Select Use Case:</label>
+        <select id="use-case-select" required>
+          <option value="">-- Select Use Case --</option>
+        </select>
+      </div>
+    
+      <div class="input-section">
+        <label for="campaign-input">Campaign Name:</label>
+        <input type="text" id="campaign-input" placeholder="Enter Campaign Name">
+      </div>
+    
+    
+      <button id="generate-button" type="submit">Generate UTM Tagged Link</button>
+    </form>
+
+    <div class="output-section">
+      <p>Share a Coke, share a UTM :</p>
+      <div id="utm-output"></div> 
+      <button id="copy-button">
+        Copy to Clipboard
+      </button>
+      <div id="copy-animation" style="display: none;">🎉 Link Copied! 🎉</div> 
+    </div>
+  </section>
+
+  <div class="explanation">
+    <p><strong>Understanding Attribution:</strong> UTM parameters are essential for accurate marketing attribution in Google Analytics 4 (GA4). They track the performance of your campaigns and help the organization understand where website traffic is coming from.</p> <p><strong>Required Parameters:</strong> This tool generates the core UTM parameters required for Coca-Cola's GA4 Marketing Channel setup. For more granular tracking, you can manually add additional UTM parameters like `utm_brand` to the generated URL</p> 
+  </div>
+</body>
+</html>
