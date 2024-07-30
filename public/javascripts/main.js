@@ -393,7 +393,7 @@ const copyAnimation = document.getElementById('copy-animation');
     });
 
 
-    const backgroundToggle = document.getElementById('background-toggle');
+ 
 
 
 
@@ -408,17 +408,7 @@ const copyAnimation = document.getElementById('copy-animation');
 
     
 
-    // Add event listener to the checkbox
-    backgroundToggle.addEventListener('change', () => {
 
-    // Store the preference in localStorage (optional)
-    if (document.body.classList.contains('dark-mode')) {
-        toggleDarkMode();
-    } else {
-        toggleDarkMode();
-        body.style.backGroundImage='/public/images/coke-bottles.gif'
-    }
-    });
 
 
     async function copyToClipboard(text) {
