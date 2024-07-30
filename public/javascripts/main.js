@@ -275,17 +275,6 @@ function generateUTM(event) {
     }
   }
 
-utmForm = document.querySelector('#utm-form')
-
-// Add a click event listener to the button
-utmForm.addEventListener('submit', () => {
-
-  // 2. Then trigger the bottle animation
-/
-  /*if (! document.body.classList.contains('dark-mode')){
-  animateBottles(); 
-  } 
-});*/
 
 // Function to create and animate the bottles
 const cokeColors = [
