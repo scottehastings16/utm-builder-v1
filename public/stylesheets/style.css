@@ -24,6 +24,9 @@ body {
     position: relative;
     overflow: hidden;
 }
+table.dataTable.order-column tbody tr>.sorting_1, table.dataTable.order-column tbody tr>.sorting_2, table.dataTable.order-column tbody tr>.sorting_3, table.dataTable.display tbody tr>.sorting_1, table.dataTable.display tbody tr>.sorting_2, table.dataTable.display tbody tr>.sorting_3 {
+  background-color: none !important; 
+}
 
 h1 {
   color: white;
