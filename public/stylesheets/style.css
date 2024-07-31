@@ -11,6 +11,19 @@ body {
   margin: 0 auto;
   color: white; 
 }
+.dt-button.buttons-excel.buttons-html5{
+    padding: 10px 15px;
+    background-color: #404040;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
 
 h1 {
   color: white;
