@@ -212,9 +212,20 @@ const utmTaxonomy = [
 let filteredTaxonomy = utmTaxonomy; // Start with all data
 $(document).ready(function() {
   $('#utm-link-table').DataTable({
-    "searching": false, // Disable the search box
-    "paging": false,     // Disable pagination controls
-    "info": false        // Disable the "Showing ... entries" message
+    "searching": false,
+    "paging": false,
+    "info": false,
+    dom: 'Bfrtip', // Add buttons to the DOM
+    buttons: [
+      {
+        extend: 'excelHtml5',
+        text: 'Export to Excel',
+        title: 'UTM Link Data',
+        exportOptions: {
+          columns: [0, 1, 2] // Export only the first 3 columns
+        }
+      }
+    ]
   });
 });
 // Populate Platform Select Options
