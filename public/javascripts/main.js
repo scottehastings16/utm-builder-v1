@@ -215,14 +215,17 @@ $(document).ready(function() {
     "searching": false,
     "paging": false,
     "info": false,
-    dom: 'Bfrtip', // Add buttons to the DOM
+    dom: 'Bfrtip',
     buttons: [
       {
         extend: 'excelHtml5',
         text: 'Export to Excel',
-        title: $('#file-name')[0].value !=='' ? $('#file-name')[0].value: 'TCCC UTM Link Export',
+        title: function() { 
+          var fileName = $('#file-name').val();
+          return fileName ? fileName : 'TCCC UTM Link Export';
+        },
         exportOptions: {
-          columns: [0, 1, 2] // Export only the first 3 columns
+          columns: [0, 1, 2]
         }
       }
     ]
