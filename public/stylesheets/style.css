@@ -62,7 +62,10 @@ h1 {
   margin-bottom: 8px;
   font-weight: bold;
 }
-
+input#file-name {
+    width: 15%;
+    margin-bottom: 3%;
+}
 input[type="text"],
 input[type="radio"] + label,
 button,
