@@ -220,7 +220,7 @@ $(document).ready(function() {
       {
         extend: 'excelHtml5',
         text: 'Export to Excel',
-        title: 'UTM Link Data',
+        title: $('#file-name')[0].value !=='' ? $('#file-name')[0].value: 'TCCC UTM Link Export',
         exportOptions: {
           columns: [0, 1, 2] // Export only the first 3 columns
         }
